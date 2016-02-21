@@ -3,9 +3,7 @@ import java.util.Scanner;
 /**
  * Created by java on 2/7/2016.
  */
-class BigNumbers {
-    int A[] = new int[5];
-}
+
 
 class MainClass {
     public String replace(String s, int index, char c) {
