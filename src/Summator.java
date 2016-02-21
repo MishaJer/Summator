@@ -49,8 +49,8 @@ class MainClass {
             s3 = s1;
         }
         for (i = 1; i < max + 1; i++) {
-            System.out.println("Working...");
-            System.out.println("bonus = " + bonus);
+            //System.out.println("Working...");
+            //System.out.println("bonus = " + bonus);
 
             //System.out.println(s3+" str1");
             if (s1.length() - i >= 0 && s2.length() - i >= 0) {
@@ -61,11 +61,11 @@ class MainClass {
                     System.out.println((Character.getNumericValue(s1.charAt(s1.length() - i))+ Character.getNumericValue(s2.charAt(s2.length() - i)) + bonus)+"!!!");
                     bonus = 0;
                 }
-                System.out.println("1");
+                //System.out.println("1");
             } else {
                 if (s1.length() - i < 0) {
                     replacement = Character.getNumericValue(s2.charAt(s2.length() - i)) % 10 + bonus;
-                    System.out.println("2");
+                    //System.out.println("2");
                     if ((Character.getNumericValue(s2.charAt(s2.length() - i)) + bonus) / 10 > 0) {
                         bonus = 1;
                     } else {
@@ -74,7 +74,7 @@ class MainClass {
                 }
                 if (s2.length() - i < 0) {
                     replacement = Character.getNumericValue(s1.charAt(s1.length() - i)) % 10 + bonus;
-                    System.out.println("3");
+                    //System.out.println("3");
                     if ((Character.getNumericValue(s1.charAt(s1.length() - i)) + bonus) / 10 > 0) {
                         bonus = 1;
                     } else {
@@ -87,7 +87,7 @@ class MainClass {
             //System.out.println(repl);
             //System.out.println(s3 + "," + (s3.length() - i) + "," + repl);
             s3 = replace(s3, (s3.length() - i + 1), repl);
-            System.out.println(s3 + " str");
+            //System.out.println(s3 + " str");
         }
 
         return s3;
